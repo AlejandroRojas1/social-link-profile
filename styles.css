@@ -1,17 +1,43 @@
+:root {
+    --Green: hsl(75, 94%, 57%);
+    --Grey-700: hsl(0, 0%, 20%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-900: hsl(0, 0%, 8%);
+
+}
+
+
 * {
     box-sizing: border-box;
     min-width: 0;
-  }
-  body {
-    min-height: 100dvh;
-  }
-  h1, h2, h3, h4 {
-    text-wrap: balance;
-  }
-  p {
-    text-wrap: pretty;
-  }
+}
 
+body {
+    min-height: 100dvh;
+    background-color: var(--Grey-900);
+
+    .card {
+        background-color: var(--Grey-800);
+        margin: 20dvh auto;
+        h1,
+        h2,
+        h3,
+        h4 {
+            text-wrap: balance;
+        }
+
+        p {
+            text-wrap: pretty;
+        }
+
+        figcaption {
+            p {
+                color: var(--Green);
+            }
+        }
+    }
+
+}
 
 
 
