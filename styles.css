@@ -15,10 +15,11 @@
 body {
     min-height: 100dvh;
     background-color: var(--Grey-900);
-
+    font-size: 14px;
     .card {
         background-color: var(--Grey-800);
         margin: 20dvh auto;
+        width: 350px;
         h1,
         h2,
         h3,
@@ -34,6 +35,18 @@ body {
             p {
                 color: var(--Green);
             }
+        }
+        button {
+            margin-bottom: .75rem;
+            background-color: var(--Grey-700);
+            font-weight: 500;
+            &:hover {
+                background-color: var(--Green);
+                color: var(--Grey-900);
+            }
+        }
+        button:last-child {
+            margin-bottom: 2.5rem;
         }
     }
 
